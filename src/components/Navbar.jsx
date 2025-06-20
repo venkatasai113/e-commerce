@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className='flex items-center justify-between py-5 font-medium'>
 
-      <img src={assets.logo}  className='w-36' alt="" />
+      <Link to="/"><img src={assets.logo}  className='w-36' alt="" /></Link>
 
       <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
         
@@ -53,7 +53,7 @@ const Navbar = () => {
           
           <Link to='/cart' className="relative">
               <img src={assets.cart_icon} className="w-5 min-w-5" alt="" />
-              <p className="absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]"></p>
+              <p className="absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]">10</p>
           </Link>
 
           <img onClick={()=>setvisible(true)} src={assets.menu_icon} className="w-5 cursor-pointer sm:hidden" alt="" />
